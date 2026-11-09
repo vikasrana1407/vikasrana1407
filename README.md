@@ -6,8 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/vikasrana1407">GitHub</a> ·
-  <a href="https://github.com/vikasrana1407/Portfolio">Portfolio</a> ·
-  <a href="mailto:vikasrana1407@users.noreply.github.com">Contact</a>
+  <a href="https://github.com/vikasrana1407/Portfolio">Portfolio</a>
 </p>
 
 ## About
