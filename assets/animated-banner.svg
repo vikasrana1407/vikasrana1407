@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title description">
+  <title id="title">Vikas Rana — AI, Python, and automation</title>
+  <desc id="description">A dark, animated banner with glowing connected nodes and a scanning accent.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020" />
+      <stop offset="100%" stop-color="#171333" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#a78bfa" />
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="300" rx="24" fill="url(#background)" />
+  <g fill="none" stroke="#344064" stroke-width="1.5" opacity="0.8">
+    <path d="M760 35 890 95 1015 48 1135 112M760 35 785 170 915 220 1015 48M890 95 1000 168 1135 112M785 170 880 270 1000 168 1135 240" />
+  </g>
+  <g fill="#22d3ee" filter="url(#glow)">
+    <circle cx="760" cy="35" r="4"><animate attributeName="r" values="3;7;3" dur="3s" repeatCount="indefinite" /></circle>
+    <circle cx="890" cy="95" r="4"><animate attributeName="r" values="4;8;4" dur="4s" repeatCount="indefinite" /></circle>
+    <circle cx="1015" cy="48" r="4"><animate attributeName="r" values="3;7;3" dur="3.5s" repeatCount="indefinite" /></circle>
+    <circle cx="1135" cy="112" r="4"><animate attributeName="r" values="4;8;4" dur="4.5s" repeatCount="indefinite" /></circle>
+    <circle cx="785" cy="170" r="4"><animate attributeName="r" values="3;7;3" dur="4s" repeatCount="indefinite" /></circle>
+    <circle cx="915" cy="220" r="4"><animate attributeName="r" values="4;8;4" dur="3.5s" repeatCount="indefinite" /></circle>
+    <circle cx="1000" cy="168" r="4"><animate attributeName="r" values="3;7;3" dur="4.5s" repeatCount="indefinite" /></circle>
+    <circle cx="880" cy="270" r="4"><animate attributeName="r" values="4;8;4" dur="3s" repeatCount="indefinite" /></circle>
+    <circle cx="1135" cy="240" r="4"><animate attributeName="r" values="3;7;3" dur="4s" repeatCount="indefinite" /></circle>
+  </g>
+  <circle r="5" fill="#c4b5fd" filter="url(#glow)">
+    <animateMotion dur="9s" repeatCount="indefinite" path="M760 35 890 95 1015 48 1135 112 1000 168 915 220 785 170 760 35" />
+  </circle>
+  <text x="78" y="112" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">VIKAS RANA</text>
+  <text x="80" y="157" fill="#a5b4fc" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="2">AI / ML  ·  PYTHON  ·  AUTOMATION</text>
+  <rect x="80" y="194" width="260" height="3" rx="2" fill="#26314e" />
+  <rect x="80" y="194" width="40" height="3" rx="2" fill="url(#accent)">
+    <animate attributeName="x" values="80;300;80" dur="5s" repeatCount="indefinite" />
+  </rect>
+  <text x="80" y="238" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="15">Building useful software, one idea at a time.</text>
+</svg>
