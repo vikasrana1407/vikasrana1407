@@ -1,43 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title description">
   <title id="title">Vikas Rana — AI, Python, and automation</title>
-  <desc id="description">A dark, animated banner with glowing connected nodes and a scanning accent.</desc>
+  <desc id="description">A vivid animated neon banner with a glowing network, orbiting light, and colorful gradients.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b1020" />
-      <stop offset="100%" stop-color="#171333" />
+      <stop offset="0%" stop-color="#080d1b" />
+      <stop offset="52%" stop-color="#111936" />
+      <stop offset="100%" stop-color="#251044" />
+      <animate attributeName="x2" values="1;0;1" dur="12s" repeatCount="indefinite" />
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#22d3ee" />
-      <stop offset="100%" stop-color="#a78bfa" />
+      <stop offset="52%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#e879f9" />
     </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity=".32" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
     <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feGaussianBlur stdDeviation="5" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#94a3b8" stroke-opacity=".07" stroke-width="1" />
+    </pattern>
   </defs>
-  <rect width="1200" height="300" rx="24" fill="url(#background)" />
-  <g fill="none" stroke="#344064" stroke-width="1.5" opacity="0.8">
-    <path d="M760 35 890 95 1015 48 1135 112M760 35 785 170 915 220 1015 48M890 95 1000 168 1135 112M785 170 880 270 1000 168 1135 240" />
-  </g>
-  <g fill="#22d3ee" filter="url(#glow)">
-    <circle cx="760" cy="35" r="4"><animate attributeName="r" values="3;7;3" dur="3s" repeatCount="indefinite" /></circle>
-    <circle cx="890" cy="95" r="4"><animate attributeName="r" values="4;8;4" dur="4s" repeatCount="indefinite" /></circle>
-    <circle cx="1015" cy="48" r="4"><animate attributeName="r" values="3;7;3" dur="3.5s" repeatCount="indefinite" /></circle>
-    <circle cx="1135" cy="112" r="4"><animate attributeName="r" values="4;8;4" dur="4.5s" repeatCount="indefinite" /></circle>
-    <circle cx="785" cy="170" r="4"><animate attributeName="r" values="3;7;3" dur="4s" repeatCount="indefinite" /></circle>
-    <circle cx="915" cy="220" r="4"><animate attributeName="r" values="4;8;4" dur="3.5s" repeatCount="indefinite" /></circle>
-    <circle cx="1000" cy="168" r="4"><animate attributeName="r" values="3;7;3" dur="4.5s" repeatCount="indefinite" /></circle>
-    <circle cx="880" cy="270" r="4"><animate attributeName="r" values="4;8;4" dur="3s" repeatCount="indefinite" /></circle>
-    <circle cx="1135" cy="240" r="4"><animate attributeName="r" values="3;7;3" dur="4s" repeatCount="indefinite" /></circle>
-  </g>
-  <circle r="5" fill="#c4b5fd" filter="url(#glow)">
-    <animateMotion dur="9s" repeatCount="indefinite" path="M760 35 890 95 1015 48 1135 112 1000 168 915 220 785 170 760 35" />
+  <rect width="1200" height="320" rx="26" fill="url(#background)" />
+  <rect width="1200" height="320" rx="26" fill="url(#grid)" />
+  <circle cx="1000" cy="150" r="210" fill="url(#halo)">
+    <animate attributeName="r" values="190;230;190" dur="7s" repeatCount="indefinite" />
   </circle>
-  <text x="78" y="112" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">VIKAS RANA</text>
-  <text x="80" y="157" fill="#a5b4fc" font-family="Arial, Helvetica, sans-serif" font-size="21" letter-spacing="2">AI / ML  ·  PYTHON  ·  AUTOMATION</text>
-  <rect x="80" y="194" width="260" height="3" rx="2" fill="#26314e" />
-  <rect x="80" y="194" width="40" height="3" rx="2" fill="url(#accent)">
-    <animate attributeName="x" values="80;300;80" dur="5s" repeatCount="indefinite" />
-  </rect>
-  <text x="80" y="238" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="15">Building useful software, one idea at a time.</text>
+  <g fill="none" stroke="url(#neon)" stroke-width="1.5" opacity=".55">
+    <path d="M740 45 855 105 985 48 1100 105 1160 55M740 45 775 175 900 245 1025 175 1160 245M855 105 900 245M985 48 1025 175 1100 105 1160 245" />
+    <path d="M740 45 855 105 985 48 1100 105 1160 55" stroke-dasharray="7 12">
+      <animate attributeName="stroke-dashoffset" values="0;76" dur="5s" repeatCount="indefinite" />
+    </path>
+  </g>
+  <g fill="#67e8f9" filter="url(#glow)">
+    <circle cx="740" cy="45" r="4"><animate attributeName="r" values="3;7;3" dur="3s" repeatCount="indefinite" /></circle>
+    <circle cx="855" cy="105" r="5"><animate attributeName="r" values="4;8;4" dur="3.8s" repeatCount="indefinite" /></circle>
+    <circle cx="985" cy="48" r="4"><animate attributeName="r" values="3;7;3" dur="4.2s" repeatCount="indefinite" /></circle>
+    <circle cx="1100" cy="105" r="5"><animate attributeName="r" values="4;8;4" dur="3.5s" repeatCount="indefinite" /></circle>
+    <circle cx="775" cy="175" r="4"><animate attributeName="r" values="3;7;3" dur="4s" repeatCount="indefinite" /></circle>
+    <circle cx="900" cy="245" r="5"><animate attributeName="r" values="4;8;4" dur="3.2s" repeatCount="indefinite" /></circle>
+    <circle cx="1025" cy="175" r="4"><animate attributeName="r" values="3;7;3" dur="4.4s" repeatCount="indefinite" /></circle>
+    <circle cx="1160" cy="245" r="5"><animate attributeName="r" values="4;8;4" dur="3.6s" repeatCount="indefinite" /></circle>
+  </g>
+  <ellipse cx="950" cy="155" rx="205" ry="102" fill="none" stroke="#c084fc" stroke-opacity=".3" stroke-width="1.5" transform="rotate(-22 950 155)" />
+  <circle r="6" fill="#f0abfc" filter="url(#glow)">
+    <animateMotion dur="8s" repeatCount="indefinite" path="M740 45 855 105 985 48 1100 105 1160 245 1025 175 900 245 775 175 740 45" />
+  </circle>
+  <text x="78" y="112" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="1">VIKAS RANA</text>
+  <rect x="80" y="136" width="290" height="3" rx="2" fill="url(#neon)" />
+  <text x="80" y="183" fill="#c4b5fd" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" letter-spacing="2">AI / ML  ·  PYTHON  ·  AUTOMATION</text>
+  <text x="80" y="224" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="16">Building useful software, one idea at a time.</text>
+  <text x="80" y="272" fill="#67e8f9" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="3">THINK  ·  BUILD  ·  ITERATE</text>
+  <rect x="0" y="0" width="1200" height="320" rx="26" fill="none" stroke="url(#neon)" stroke-opacity=".42" stroke-width="2" />
 </svg>
