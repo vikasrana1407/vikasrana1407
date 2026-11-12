@@ -9,7 +9,8 @@
 **AI / ML · Python · Full-stack · Automation**
 
 [![GitHub](https://img.shields.io/badge/GitHub-vikasrana1407-181717?style=for-the-badge&logo=github)](https://github.com/vikasrana1407)
-[![Portfolio](https://img.shields.io/badge/Explore-My_Portfolio-7c3aed?style=for-the-badge&logo=googlechrome&logoColor=white)](https://github.com/vikasrana1407/Portfolio)
+[![Live Portfolio](https://img.shields.io/badge/Visit-Live_Portfolio-7c3aed?style=for-the-badge&logo=googlechrome&logoColor=white)](https://vikasrana1407.github.io/Portfolio/)
+[![Portfolio Source](https://img.shields.io/badge/Portfolio-Source_Code-0ea5e9?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vikasrana1407/Portfolio)
 
 </div>
 
